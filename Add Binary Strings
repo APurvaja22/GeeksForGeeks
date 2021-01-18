@@ -1,0 +1,5 @@
+class Solution:
+	def addBinary(self, A, B):
+        integer_sum = int(A, 2) + int(B, 2)
+        binary_sum = bin(integer_sum)
+        return binary_sum[2:]
