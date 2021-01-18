@@ -1,0 +1,10 @@
+class Solution:
+    def roundToNearest (self, N) :
+        N = int(N)
+        r = N % 10
+        if(r <= 5):
+            output = N - r
+        else:
+            d = 10 - r
+            output = N + d
+        return output
